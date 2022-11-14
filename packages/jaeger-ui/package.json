@@ -25,7 +25,7 @@
     "@types/react-window": "^1.8.0",
     "babel-plugin-import": "1.13.5",
     "bluebird": "^3.5.0",
-    "customize-cra": "0.2.9",
+    "customize-cra": "1.0.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.2.0",
     "enzyme-to-json": "^3.3.0",
