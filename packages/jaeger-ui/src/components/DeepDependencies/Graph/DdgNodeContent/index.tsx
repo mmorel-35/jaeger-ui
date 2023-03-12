@@ -16,8 +16,8 @@ import * as React from 'react';
 import { Checkbox, Popover } from 'antd';
 import cx from 'classnames';
 import { TLayoutVertex } from '@jaegertracing/plexus/lib/types';
-import IoAndroidLocate from 'react-icons/lib/io/android-locate';
-import MdVisibilityOff from 'react-icons/lib/md/visibility-off';
+import { IoAndroidLocate } from 'react-icons/io';
+import { MdVisibilityOff } from 'react-icons/md';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 

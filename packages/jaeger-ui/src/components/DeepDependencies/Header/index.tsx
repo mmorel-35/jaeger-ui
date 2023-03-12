@@ -14,8 +14,8 @@
 
 import * as React from 'react';
 import { Icon, Input, Tooltip } from 'antd';
-import MdVisibility from 'react-icons/lib/md/visibility';
-import MdVisibilityOff from 'react-icons/lib/md/visibility-off';
+import { MdVisibility } from 'react-icons/md';
+import { MdVisibilityOff } from 'react-icons/md';
 
 import HopsSelector from './HopsSelector';
 import NameSelector from '../../common/NameSelector';

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import * as React from 'react';
-import IoChevronDown from 'react-icons/lib/io/chevron-down';
+import { IoChevronDown } from 'react-icons/io';
 
 import './ChevronDown.css';
 

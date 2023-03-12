@@ -14,8 +14,8 @@
 
 import React, { PureComponent } from 'react';
 import { Popover } from 'antd';
-import SortAmountAsc from 'react-icons/lib/fa/sort-amount-asc.js';
-import IoChevronRight from 'react-icons/lib/io/chevron-right';
+import { SortAmountAsc } from 'react-icons/fa';
+import { IoChevronRight } from 'react-icons/io';
 
 import ChevronDown from '../ChevronDown';
 import { trackHopChange } from '../../index.track';

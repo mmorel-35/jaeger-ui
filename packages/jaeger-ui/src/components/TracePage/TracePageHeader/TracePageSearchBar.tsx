@@ -15,7 +15,7 @@
 import * as React from 'react';
 import { Button, Input } from 'antd';
 import cx from 'classnames';
-import IoAndroidLocate from 'react-icons/lib/io/android-locate';
+import { IoAndroidLocate } from 'react-icons/io';
 
 import * as markers from './TracePageSearchBar.markers';
 import { trackFilter } from '../index.track';

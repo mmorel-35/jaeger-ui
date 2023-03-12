@@ -14,8 +14,8 @@
 
 import { shallow } from 'enzyme';
 import React from 'react';
-import IoChevronRight from 'react-icons/lib/io/chevron-right';
-import IoIosArrowDown from 'react-icons/lib/io/ios-arrow-down';
+import { IoChevronRight } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 
 import { mapDispatchToProps, mapStateToProps, UnconnectedSpanTreeOffset } from './SpanTreeOffset';
 import spanAncestorIdsSpy from '../../../utils/span-ancestor-ids';

@@ -14,7 +14,7 @@
 
 import React from 'react';
 import cx from 'classnames';
-import IoAndroidOpen from 'react-icons/lib/io/android-open';
+import { IoAndroidOpen } from 'react-icons/io';
 
 import './NewWindowIcon.css';
 

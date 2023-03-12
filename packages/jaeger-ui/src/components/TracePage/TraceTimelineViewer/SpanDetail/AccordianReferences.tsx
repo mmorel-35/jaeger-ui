@@ -14,8 +14,8 @@
 
 import * as React from 'react';
 import cx from 'classnames';
-import IoIosArrowDown from 'react-icons/lib/io/ios-arrow-down';
-import IoIosArrowRight from 'react-icons/lib/io/ios-arrow-right';
+import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowRight } from 'react-icons/io';
 import './AccordianReferences.css';
 import { SpanReference } from '../../../../types/trace';
 import ReferenceLink from '../../url/ReferenceLink';

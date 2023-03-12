@@ -17,9 +17,9 @@ import { Button, Input } from 'antd';
 import _get from 'lodash/get';
 import _maxBy from 'lodash/maxBy';
 import _values from 'lodash/values';
-import IoAndroidArrowBack from 'react-icons/lib/io/android-arrow-back';
-import IoIosFilingOutline from 'react-icons/lib/io/ios-filing-outline';
-import MdKeyboardArrowRight from 'react-icons/lib/md/keyboard-arrow-right';
+import { IoAndroidArrowBack } from 'react-icons/io';
+import { IoIosFilingOutline } from 'react-icons/io';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 import AltViewOptions from './AltViewOptions';
