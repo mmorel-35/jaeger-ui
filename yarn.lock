@@ -2768,11 +2768,11 @@
     "@types/react" "*"
 
 "@types/react-virtualized-select@^3.0.7":
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/@types/react-virtualized-select/-/react-virtualized-select-3.0.11.tgz#d50ada4939a86d9e7cd869da9f67c5a982d037c5"
-  integrity sha512-1dgomao+k+ftr4+eNpeQ3U4FN2QMiRHOZdaddaNj60w2vK9PuTPheUmF8lXnEZDjzaESNQTsrdJ02qkqZmhn4g==
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/@types/react-virtualized-select/-/react-virtualized-select-3.0.12.tgz#bb06c87e4d545c8084db75d07fce6a636c066f7a"
+  integrity sha512-xDjql+6GwB+9MSdXWi/YNIkVRa7giY8k3XWO/4znwQHLBnSXiiyTR6wIlsr4vpru+bTsXzMs60eokkeNVf6PPg==
   dependencies:
-    "@types/react" "*"
+    "@types/react" "^17"
     "@types/react-select" "^1.0.0"
     "@types/react-virtualized" "*"
 
@@ -2790,7 +2790,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@17.0.53":
+"@types/react@*", "@types/react@17.0.53", "@types/react@^17":
   version "17.0.53"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.53.tgz#10d4d5999b8af3d6bc6a9369d7eb953da82442ab"
   integrity sha512-1yIpQR2zdYu1Z/dc1OxC+MA6GR240u3gcnP4l6mvj/PJiVaqHsQPmWttsvHsfnhfPbU2FuGmo0wSITPygjBmsw==
