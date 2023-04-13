@@ -18,7 +18,7 @@
     "@svgr/babel-plugin-transform-svg-component": "^6.5.1",
     "@svgr/babel-preset": "^6.5.1",
     "@types/match-sorter": "^2.3.0",
-    "@types/react": "17.0.53",
+    "@types/react": "17.0.58",
     "@types/react-dom": "17.0.19",
     "@types/react-router-redux": "^5.0.21",
     "@types/react-window": "^1.8.0",
