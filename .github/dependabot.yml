@@ -14,8 +14,7 @@ updates:
           - "babel-loader"
       jest:
         patterns:
-          - "jest*"
-          - "babel-jest"
+          - "*jest*"
       eslint:
         patterns:
           - "@typescript-eslint/*"
