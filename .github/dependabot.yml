@@ -6,8 +6,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    # we have too many dependency PRs today to rebase automatically
-    rebase-strategy: "disabled"
     groups:
       babel:
         patterns:
