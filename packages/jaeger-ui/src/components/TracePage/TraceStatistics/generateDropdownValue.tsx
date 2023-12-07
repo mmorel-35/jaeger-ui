@@ -12,7 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import _ from 'lodash';
+import concat from 'lodash/concat';
+import filter from 'lodash/filter';
 import { Trace } from '../../../types/trace';
 import { ITableSpan } from './types';
 
@@ -43,7 +44,7 @@ function getValueTagIsPicked(tableValue: ITableSpan[], trace: Trace, nameSelecto
 
   const tags = _(availableTags).map('tags').flatten().value();
   let tagKeys = _(tags).map('key').uniq().value();
-  tagKeys = _.filter(tagKeys, function calc(o) {
+  tagKeys = filter(tagKeys, function calc(o) {
     return o !== nameSelectorTitle;
   });
   availableTags = [];
@@ -79,7 +80,7 @@ export function generateDropdownValue(trace: Trace) {
   const allSpans = trace.spans;
   const tags = _(allSpans).map('tags').flatten().value();
   const tagKeys = _(tags).map('key').uniq().value();
-  const values = _.concat(serviceName, operationName, tagKeys);
+  const values = concat(serviceName, operationName, tagKeys);
   return values;
 }
 
