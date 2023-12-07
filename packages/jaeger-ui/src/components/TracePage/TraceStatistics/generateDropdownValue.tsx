@@ -14,6 +14,10 @@
 
 import concat from 'lodash/concat';
 import filter from 'lodash/filter';
+import flatten from 'lodash/fp/flatten';
+import flow from 'lodash/fp/flow';
+import map from 'lodash/fp/map';
+import uniq from 'lodash/fp/uniq';
 import { Trace } from '../../../types/trace';
 import { ITableSpan } from './types';
 
@@ -42,8 +46,8 @@ function getValueTagIsPicked(tableValue: ITableSpan[], trace: Trace, nameSelecto
   }
   availableTags = [...new Set(availableTags)];
 
-  const tags = _(availableTags).map('tags').flatten().value();
-  let tagKeys = _(tags).map('key').uniq().value();
+  const tags = flow(map('tags'), flatten)(availableTags);
+  let tagKeys = flow(map('key'), uniq)(tags);
   tagKeys = filter(tagKeys, function calc(o) {
     return o !== nameSelectorTitle;
   });
@@ -78,8 +82,8 @@ function getValueNoTagIsPicked(trace: Trace, nameSelectorTitle: string) {
 
 export function generateDropdownValue(trace: Trace) {
   const allSpans = trace.spans;
-  const tags = _(allSpans).map('tags').flatten().value();
-  const tagKeys = _(tags).map('key').uniq().value();
+  const tags = flow(map('tags'), flatten)(allSpans);
+  const tagKeys = flow(map('key'), uniq)(tags);
   const values = concat(serviceName, operationName, tagKeys);
   return values;
 }
