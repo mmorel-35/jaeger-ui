@@ -17,7 +17,7 @@ import { Col, Divider, Row, Tag } from 'antd';
 import { LocationDescriptor } from 'history';
 import { Link } from 'react-router-dom';
 
-import sortBy from 'lodash/sortBy';
+import sortBy from 'lodash/fp/sortBy';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
