@@ -15,7 +15,7 @@
 import React, { Component } from 'react';
 import { InteractiveForceGraph, ForceGraphNode } from 'react-vis-force';
 import { window } from 'global';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import ForceGraphArrowLink from './ForceGraphArrowLink';
 
 import { nodesPropTypes, linksPropTypes } from '../../propTypes/dependencies';
