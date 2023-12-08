@@ -18,7 +18,7 @@ import _flatten from 'lodash/fp/flatten';
 import _flow from 'lodash/fp/flow';
 import _map from 'lodash/fp/map';
 import _sortBy from 'lodash/fp/sortBy';
-import _uniq from 'lodash/fp/uniq'
+import _uniq from 'lodash/fp/uniq';
 import { Trace } from '../../../types/trace';
 import { ITableSpan } from './types';
 
