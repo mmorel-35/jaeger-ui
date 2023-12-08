@@ -83,8 +83,8 @@ function getValueNoTagIsPicked(trace: Trace, nameSelectorTitle: string) {
 
 export function generateDropdownValue(trace: Trace) {
   const allSpans = trace.spans;
-  const tags = _flow(_map('tags'), flatten)(allSpans);
-  const tagKeys = _flow(_map('key'), uniq)(tags);
+  const tags = _flow(_map('tags'), _flatten)(allSpans);
+  const tagKeys = _flow(_map('key'), _uniq)(tags);
   const values = _concat(serviceName, operationName, tagKeys);
   return values;
 }
