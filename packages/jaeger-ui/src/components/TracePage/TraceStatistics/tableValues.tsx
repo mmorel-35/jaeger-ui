@@ -16,6 +16,7 @@ import memoizeOne from 'memoize-one';
 import _flow from 'lodash/fp/flow';
 import _groupBy from 'lodash/fp/groupBy';
 import _map from 'lodash/fp/map';
+import _uniq from 'lodash/fp/uniq';
 import DRange from 'drange';
 import { Trace, Span } from '../../../types/trace';
 import { ITableSpan } from './types';
