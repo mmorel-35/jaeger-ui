@@ -85,7 +85,7 @@ export function generateDropdownValue(trace: Trace) {
   const allSpans = trace.spans;
   const tags = _flow(_map('tags'), flatten)(allSpans);
   const tagKeys = _flow(_map('key'), uniq)(tags);
-  const values = _.concat(serviceName, operationName, tagKeys);
+  const values = _concat(serviceName, operationName, tagKeys);
   return values;
 }
 
